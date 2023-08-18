@@ -11,3 +11,5 @@ jobs:
         node-version: '14'
     - name: Install 
       run: yarn install
+    - name: Build 
+      run: yarn build
