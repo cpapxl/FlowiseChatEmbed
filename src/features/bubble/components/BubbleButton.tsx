@@ -37,7 +37,7 @@ export const BubbleButton = (props: Props) => {
                     class={
                         `stroke-2 fill-transparent absolute duration-200 transition ` +
                         (props.isBotOpened ? 'scale-0 opacity-0' : 'scale-100 opacity-100') +
-                        (props.size === 'large' ? ' w-9' : ' w-7')
+                        (props.size === 'large' ? ' w-14' : ' w-7')
                     }
                 >
                     <path d='M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z' />
@@ -46,7 +46,7 @@ export const BubbleButton = (props: Props) => {
             <Show when={props.customIconSrc}>
                 <img
                     src={props.customIconSrc}
-                    class={'rounded-full object-cover' + (props.isBotOpened ? 'scale-0 opacity-0' : 'scale-100 opacity-100') + (props.size === 'large' ? ' w-9 h-9' : ' w-7 h-7')}
+                    class={'rounded-full object-cover' + (props.isBotOpened ? 'scale-0 opacity-0' : 'scale-100 opacity-100') + (props.size === 'large' ? ' w-14 h-14' : ' w-7 h-7')}
                     alt='Bubble button icon'
                 />
             </Show>
@@ -57,7 +57,7 @@ export const BubbleButton = (props: Props) => {
                 class={
                     `absolute duration-200 transition ` +
                     (props.isBotOpened ? 'scale-100 rotate-0 opacity-100' : 'scale-0 -rotate-180 opacity-0') +
-                    (props.size === 'large' ? ' w-9' : ' w-7')
+                    (props.size === 'large' ? ' w-14' : ' w-7')
                 }
             >
                 <path
